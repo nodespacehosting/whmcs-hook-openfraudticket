@@ -57,7 +57,7 @@ Thank you!";
             'message' => $ticket_message,
             'clientid' => $_SESSION['uid'],
             'priority' => $ticket_priority,
-            'isadmin' => true,
+            'admin' => true,
             'markdown' => true,
         );
         $apicall = localAPI('OpenTicket', $values, $adminuser);
